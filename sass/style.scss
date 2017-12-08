@@ -68,12 +68,12 @@ html, body{
        			padding-top: 12em;
        			.banner-white-box {
        			    border: 1px solid #fff;
-       			    width: 40%;
+       			    width: 33%;
        			    margin: 0 auto;
        			    a{
        			    	.shelter-title{
        			    		border: 3px solid #fff;
-       			    		padding: 3em 0em;
+       			    		padding-bottom: 3em;
        			    		background: #fff;
        			    		margin: 0.5em;
        			    		h1 {
@@ -140,9 +140,10 @@ html, body{
 	    			    		cursor: pointer;
 	    			    	}
 	    			    	.nav1{
-	    			    		display: inline-block; // display:none; turi buti kai veiks js
+	    			    		display: none; // display:none; turi buti kai veiks js
 	    			    		position: absolute;
 	    			    		right:5%;
+	    			    		top: -2%;
 	    			    		padding: 0;
 	    			    	}
 	    			    	ul{
@@ -162,7 +163,7 @@ html, body{
 	    			    				display: inline-block;
 	    			    			}
 	    			    			a:hover{
-	    			    				 color: #FFFFFF;
+	    			    				color: #FFFFFF;
 	    			    			    background: #954925;
 	    			    			}
 	    			    		}
@@ -181,7 +182,148 @@ html, body{
 		left:0;
 		z-index: 999;
 	}
+	/* ---------- header ends here ------------ */
+	/* -------------- About us -----------------*/
+	.section{
+		padding:4em 0;
+		.container{
+			h3.title {
+				font-size: 3em;
+				text-transform: capitalize;
+				color: #000000;
+				margin-bottom: 1.2em;
+				font-weight: 300;
+				text-align: center;
+				position:relative;
+			}
+			h3.title:before {
+				content: '';
+				width: 3%;
+				height: 1px;
+				background: #e1e6e9;
+				position: absolute;
+				bottom: -10px;
+				left: 49%;
+				display: block;
+				-webkit-transition: .5s all;
+				-moz-transition: .5s all;
+				transition: .5s all;
+			}
+			.aboutPLframe{
+				padding-right: 0.5em;
+				padding-left: 0.5em;
+				padding-bottom: 0.5em;
+				padding-top: 0.5em;
+				margin-right: 340px;
+				margin-left: 340px;
+				border: 1px solid black;
+				.aboutLP {
+					border: 1px solid black;
+					padding: 0 1.5em;
+					h2.title {
+						color:#37485C;
+						font-size: 2.2em;
+						text-transform: capitalize;
+						display: inline;
+						position: relative;
+						bottom: 2.1em;
+						font-family: 'Open Sans', sans-serif;
+						font-weight: 700;
+					}
+					h5 {
+					    color:#954925;
+					    font-style: italic;
+					    font-family: 'Open Sans', sans-serif;
+					    font-size: 1em;
+					    text-transform: uppercase;
+					    margin: 1em 0;
+					    line-height: 1.8em;
+					    font-weight: 600;
+					    letter-spacing: 1px;
+					}
+					p{
+						letter-spacing: 1.5px;
+						font-family: 'Open Sans', sans-serif;
+						font-size: 0.8em;
+						text-transform: uppercase;
+						margin: 1em 0;
+						line-height: 1.8em;
+						font-weight: 600;
+					}
+					p.paremk{
+						font-family: 'Open Sans', sans-serif;
+						text-align: center;
+						font-weight: 600;
+						color:#954925;
+					}
+					p.linksmosios{
+						font-family: 'Open Sans', sans-serif;
+						text-align: center;
+						font-weight: 600;
+					}
+					.iframeWrapper{
+						text-align: center;
+					}
+					.payPal{
+						display: block;
+						margin: auto;
+						width: 10%;
+					}
+					.email{
+						font-family: 'Open Sans', sans-serif;
+						text-align: center;
+						font-weight: 600;
+						color:#954925;
+						margin-top: 0;
+					}
+					div.infoLine{
+						display: block;
+						margin: auto;
+						width: 40%;
+						height: 1px;
+						border-bottom: 1px solid black;
+					}
+				}
+			}
+			
+		}
+	}
+	.section:hover h3.title:before {
+		    width: 22%;
+		    left: 39%;
+	}
+	/* ---------------// About us -------------*/
+	/*--services call start here--*/
+	.service-call {
+	    background:#F8F8F8;
+	    padding: 2em 0em;
+	    padding-right: 340px;
+	    padding-left: 340px;
+	    .services-call-left{
+	    	img{
+	    	position: relative;
+	    	bottom: -1.5em;
+	    	}
+	    }
+	    .services-call-right{
+	    	a {
+	    	font-size: 1em;
+	    	color:#FFFFFF;
+		    padding: 0.6em 1.9em;
+		    background: #A20F21;
+		    display: inline-block;
+		    margin-top: 1em;
+		    border-radius:4px;
+		    position: relative;
+		    left: 26.5em;
+		    bottom: 3.1em;
+	    	}
+	    	a:hover {
+	    	background:#5A6982;
+	    	}
+	    }
+	}
 }
 
-/* ---------- header ends here ------------ */
+
 
